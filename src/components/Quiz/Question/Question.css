@@ -1,0 +1,64 @@
+.QuestionWrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.QuestionDiv {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 15px 30px 1px rgb(128 128 128);
+    border-radius: 5px;
+    height: 70%;
+    width: 90%;
+    transition: transform 1s;
+    padding: 1rem;
+}
+
+.radioButton {
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 5.5rem;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: left;
+    color: var(--app-primary-blueblack);
+    padding: 1.2rem;
+    overflow: auto;
+}
+
+@media (max-width: 600px) {
+    .radioButton {
+        font-size: 1rem;
+    }
+}
+
+
+.radioButton:hover {
+
+    border: 2px solid var(--app-primary-blueblack);
+}
+.selected {
+    background: var(--app-primary-blueblack);
+    color: #fff;
+}
+.listWrapper {
+    list-style: upper-roman inside;
+    padding: 0;
+    /* TO DO : On overflow, style custom scrollbar */
+    overflow: auto;
+}
+
+.listItem {
+    display: flex;
+    border-bottom: 1px solid var(--app-gray);
+}
+
