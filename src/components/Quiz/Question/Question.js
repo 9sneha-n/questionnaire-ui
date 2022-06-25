@@ -1,22 +1,12 @@
 import './Question.css'
-import { useState } from 'react';
-import { Link } from "react-scroll";
-import { useNavigate } from 'react-router-dom';
 
+import { Link } from "react-scroll";
 
 function Question({ ...props }) {
-    const [selectedOption, setSelectedOption] = useState(-1);
-    const navigate = useNavigate();
 
-    const routeOnOptionSelect = (id, dest) => {
-        setSelectedOption(id);
-        if (dest === "/questionnaire-ui/results") {
-            navigate(dest);
-        }
-    }
 
     return (
-        <div className='QuestionWrapper' id={"QuestionNo" + props.id}>
+        <div className='fullViewPort' id={"QuestionNo" + props.id}>
             <div className='QuestionDiv'>
                 <h2>{props.question}</h2>
                 <ul className='listWrapper'>
@@ -25,10 +15,10 @@ function Question({ ...props }) {
                             <Link
                                 activeClass="active"
                                 to={props.destination}
-                                onClick={() => routeOnOptionSelect(option.id, props.destination)}
+                                onClick={() => props.setSelectedOptionForQuestion(props.id,option.id)}
                                 smooth={true}
                                 duration={500}
-                                className={(option.id === selectedOption) ? 'radioButton selected' : 'radioButton'} >
+                                className={(option.id === props.selectedOption) ? 'radioButton selected' : 'radioButton'} >
                                 {option.text}
                             </Link>
                         </li>

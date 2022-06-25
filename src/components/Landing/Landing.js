@@ -1,20 +1,16 @@
-import './Landing.css'
 import { Link } from "react-scroll";
+import * as Constants from '../../utils/constants';
 
 function Landing() {
     return (
-        <div className="LandingDiv">
-            <h1>Discover where you fall on the introvert-extrovert spectrum.</h1>
+        <div className="fullViewPort">
+            <h1>{Constants.INTRO_TEXT}</h1>
             <Link
+                className='primaryButton'
                 activeClass="active"
-                to="QuizStart"
+                to="QuizWrapper"
                 smooth={true}
-                duration={500}>
-                <button className='primaryButton' >
-                    Get Started
-                    <span className='downArrow'>&#8595;</span>
-                </button>
-            </Link>
+                duration={350} >{Constants.INTRO_BUTTON_TEXT}</Link>
         </div>
     );
 }

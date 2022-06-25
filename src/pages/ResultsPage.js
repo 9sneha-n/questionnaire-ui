@@ -1,4 +1,4 @@
-import Results from "../../components/Results/Results";
+import Results from "../components/Results/Results";
 
 function ResultsPage() {
   return (

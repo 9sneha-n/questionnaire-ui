@@ -1,11 +1,3 @@
-.QuestionWrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .QuestionDiv {
     max-width: 1000px;
     display: flex;
@@ -41,9 +33,7 @@
     }
 }
 
-
 .radioButton:hover {
-
     border: 2px solid var(--app-primary-blueblack);
 }
 .selected {
@@ -51,7 +41,7 @@
     color: #fff;
 }
 .listWrapper {
-    list-style: upper-roman inside;
+    list-style: none;
     padding: 0;
     /* TO DO : On overflow, style custom scrollbar */
     overflow: auto;

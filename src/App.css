@@ -26,12 +26,10 @@
 
 .primaryButton:hover {
   background: var(--app-gray);
-  border: 2px solid var(--app-primary-blueblack);
 }
 
-.primaryButton:focus {
-  outline: 2px solid var(--app-gray);
-  outline-offset: 2px;
+.primaryButton:disabled {
+  background: var(--disabled-gray);
 }
 
 @media (max-width: 600px) {
@@ -41,4 +39,18 @@
     font-size: 1rem;
     line-height: 1rem;
   }
+}
+
+.fullViewPort {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ErrorMessage {
+  color: var(--error-red);
+  display: none;
+  margin-top: 10px;
 }

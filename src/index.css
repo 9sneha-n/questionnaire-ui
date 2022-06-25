@@ -12,6 +12,8 @@ html {
   --app-max-width: 1200px;
   --app-primary-blueblack: #192641;
   --app-gray: #949EC0;
+  --disabled-gray: #cdcdcd;
+  --error-red: #cf637c;
   scroll-behavior: smooth;
 }
 
@@ -21,6 +23,7 @@ h1 {
   line-height: 1.167;
   margin: 0;
   color: var(--app-primary-blueblack);
+  text-align: center;
 }
 
 h2 {
