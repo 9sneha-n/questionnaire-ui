@@ -9,7 +9,7 @@ function Results() {
         <div className="ResultsDiv" id="Results">
             <h1>{results.title}</h1>
             <h2>{results.description}</h2>
-            <button className='primaryButton' onClick={() => navigate("/")}>Take Quiz Again!</button>
+            <button className='primaryButton' onClick={() => navigate("/questionnaire-ui")}>Take Quiz Again!</button>
         </div>
     );
 }

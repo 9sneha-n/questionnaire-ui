@@ -9,8 +9,8 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <Routes >
-          <Route path="/results" element={<ResultsPage />} />
-          <Route path="/" element={<QuizHome />} />
+          <Route path="/questionnaire-ui/results" element={<ResultsPage />} />
+          <Route path="/questionnaire-ui" element={<QuizHome />} />
         </Routes >
       </BrowserRouter>
     </div>

@@ -63,7 +63,7 @@ function Quiz() {
             {questions.map((questionObj, index) => {
                 //If its the last question, route to results. 
                 //TO DO : What if all the questions are not answered? Dont route to results and show an error message.
-                let destination = (index === questions.length - 1) ? "/results" : "QuestionNo" + (parseInt(questionObj.id) + 1)
+                let destination = (index === questions.length - 1) ? "/questionnaire-ui/results" : "QuestionNo" + (parseInt(questionObj.id) + 1)
                 return <Question key={questionObj.id}
                     id={questionObj.id}
                     question={questionObj.question}

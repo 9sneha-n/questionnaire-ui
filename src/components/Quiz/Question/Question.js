@@ -10,7 +10,7 @@ function Question({ ...props }) {
 
     const routeOnOptionSelect = (id, dest) => {
         setSelectedOption(id);
-        if (dest === "/results") {
+        if (dest === "/questionnaire-ui/results") {
             navigate(dest);
         }
     }
