@@ -6,20 +6,20 @@ function Submit({...props}) {
 
     const navigate = useNavigate();
 
-    const routeToResultsOnSubmitClick = () => {
-        navigate(Constants.RESULTS_RUOTE);
+    const routeToResultsOnSubmitClick = (event) => {
+        event.preventDefault();
+        navigate(Constants.RESULTS_RUOTE, {state:{result : {title:'Introvert', description:'Detailed description about result type.'}}});
     }
 
     return (
-        <div className="fullViewPort" id="SubmitLanding">
+        <form className="fullViewPort" id="SubmitLanding" onSubmit={routeToResultsOnSubmitClick}>
             <h1>{Constants.SUBMIT_TEXT}</h1>
-            <button className='primaryButton' 
-                onClick={routeToResultsOnSubmitClick} 
-                disabled={!props.submitReady}>
-                {Constants.SUBMIT_BUTTON_TEXT}
-            </button>
+            <input type='submit' className='primaryButton' 
+                disabled={!props.submitReady}
+                value={Constants.SUBMIT_BUTTON_TEXT}>
+            </input>
             <div className='ErrorMessage' style={{display: props.submitReady ? 'none' : 'block' }}>{Constants.SUBMIT_ERROR_TEXT}</div>
-        </div>
+        </form>
     );
 }
 
