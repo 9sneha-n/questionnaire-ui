@@ -8,8 +8,8 @@ function QuizHome() {
   return (
     <div>
       <Landing />
-      <Quiz setSubmitReady={setSubmitReady}/>
-      <Submit submitReady={submitReady}/>
+      <Quiz setSubmitReady={setSubmitReady} />
+      <Submit submitReady={submitReady} />
     </div>
   );
 }

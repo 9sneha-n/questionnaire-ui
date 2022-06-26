@@ -5,7 +5,7 @@
     justify-content: center;
     text-align: center;
     box-shadow: 0 15px 30px 1px rgb(128 128 128);
-    border-radius: 5px;
+    border-radius: 0.25rem;
     height: 70%;
     width: 90%;
     transition: transform 1s;
@@ -17,10 +17,10 @@
     cursor: pointer;
     font-size: 1.5rem;
     width: 100%;
-    height: 5.5rem;
+    height: 4.5rem;
     background: #fff;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     text-align: left;
     color: var(--app-primary-blueblack);
     padding: 1.2rem;
@@ -34,7 +34,7 @@
 }
 
 .radioButton:hover {
-    border: 2px solid var(--app-primary-blueblack);
+    border: 1px solid var(--app-primary-blueblack);
 }
 .selected {
     background: var(--app-primary-blueblack);
