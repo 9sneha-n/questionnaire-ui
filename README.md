@@ -10,6 +10,7 @@ git clone git@github.com:9sneha-n/questionnaire-ui.git \
 cd questionnaire-ui
 ### `npm install` : Install dependent packages
 ### `npm start` : Run the react app
+### `npm test` : Run unit tests
 
 
 
