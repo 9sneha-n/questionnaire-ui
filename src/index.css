@@ -34,6 +34,16 @@ h2 {
   color: var(--app-primary-blueblack);
 }
 
+h3 {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+  color: var(--app-primary-blueblack);
+  padding: 1rem;
+  white-space: pre-line;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 3rem;
@@ -41,5 +51,9 @@ h2 {
 
   h2 {
     font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
   }
 }

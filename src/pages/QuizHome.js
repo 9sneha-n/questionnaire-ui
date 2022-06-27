@@ -5,11 +5,12 @@ import { useState } from 'react';
 
 function QuizHome() {
   const [submitReady, setSubmitReady] = useState(false);
+  const [filledQuestionnaire, setFilledQuestionnaire] = useState(null);
   return (
     <div>
       <Landing />
-      <Quiz setSubmitReady={setSubmitReady} />
-      <Submit submitReady={submitReady} />
+      <Quiz setSubmitReady={setSubmitReady} setFilledQuestionnaire={setFilledQuestionnaire}/>
+      <Submit submitReady={submitReady} filledQuestionnaire={filledQuestionnaire} />
     </div>
   );
 }

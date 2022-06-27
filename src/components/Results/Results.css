@@ -1,0 +1,8 @@
+.desc {
+    display: flex;
+    padding: 1rem;;
+}
+
+.resultImg {
+    width: 50%;
+}
