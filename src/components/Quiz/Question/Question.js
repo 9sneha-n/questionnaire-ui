@@ -8,7 +8,9 @@ function Question({ ...props }) {
     return (
         <div className='fullViewPort' id={"QuestionNo" + props.id}>
             <div className='QuestionDiv'>
+                <div className='questionHeader'>
                 <h2>{props.question}</h2>
+                </div>
                 <ul className='listWrapper'>
                     {props && props.options && props.options.map((option) => (
                         <li className='listItem' key={option.id}>

@@ -1,8 +1,20 @@
+.resultsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  
+
 .desc {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;;
 }
 
 .resultImg {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
 }

@@ -11,13 +11,15 @@
     transition: transform 1s;
     padding: 1rem;
 }
-
+.questionHeader{
+    max-height: 40%;
+    overflow: auto;
+}
 .radioButton {
     box-sizing: border-box;
     cursor: pointer;
     font-size: 1.5rem;
     width: 100%;
-    height: 4.5rem;
     background: #fff;
     border: 1px solid transparent;
     border-radius: 0.5rem;
@@ -27,9 +29,9 @@
     overflow: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px),(max-height: 700px) {
     .radioButton {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -43,7 +45,6 @@
 .listWrapper {
     list-style: none;
     padding: 0;
-    /* TO DO : On overflow, style custom scrollbar */
     overflow: auto;
 }
 

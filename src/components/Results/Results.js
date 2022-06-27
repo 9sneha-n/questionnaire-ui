@@ -15,10 +15,10 @@ function Results() {
     return (
         <div id="Results">
             {state && state.result ?
-                <div className="fullViewPort">
+                <div className="resultsDiv">
                     <h1>{state.result.title}</h1>
                     <div className='desc'>
-                        <img className='resultImg' src={state.result.title.includes("Introvert") ? introvert_img : (state.result.title.includes("Extrovert") ? extrovert_img : ambivert_img)}></img>
+                        <img className='resultImg' alt="Introvert/Extrovert/Ambivert" src={state.result.title.includes("Introvert") ? introvert_img : (state.result.title.includes("Extrovert") ? extrovert_img : ambivert_img)}></img>
                         <h3>{state.result.description}</h3>
                     </div>
                     <button className='primaryButton' onClick={() => navigate(Constants.HOME_RUOTE)}>Take Quiz Again!</button>

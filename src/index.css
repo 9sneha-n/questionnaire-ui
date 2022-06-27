@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-weight: 300;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.5;
   margin: 0;
   color: var(--app-primary-blueblack);
@@ -36,7 +36,7 @@ h2 {
 
 h3 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1;
   margin: 0;
   color: var(--app-primary-blueblack);
@@ -44,16 +44,36 @@ h3 {
   white-space: pre-line;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px),(max-height: 700px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--app-gray);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--app-primary-blueblack)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  border: 1px solid #fff;
 }
